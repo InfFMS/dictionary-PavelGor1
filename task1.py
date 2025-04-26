@@ -3,3 +3,13 @@
 # Пример ввода
 # яблоки сливы груши персики манго киви апельсины
 # 34 56 23 89 55 32 11
+a = list(map(str,input().split()))
+b = list(map(str,input().split()))
+j = len(a)
+my_dict = {}
+if len(a) != len(b):
+    print('нехватка значений')
+for i in range(len(b)):
+    mydict = {a[i-1]:b[i-1]}
+    my_dict.update(mydict)
+print(my_dict)
