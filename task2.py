@@ -4,9 +4,9 @@ my_dict={}
 a = list(map(int,input().split()))
 for i in a:
     if i%2==0:
-        mydict = {"Четное":i}
+        mydict = {i:"Четное"}
         my_dict.update(mydict)
     else:
-        mydict = {"Нечетное": i}
+        mydict = {i: "Нечетное"}
         my_dict.update(mydict)
 print(my_dict)
